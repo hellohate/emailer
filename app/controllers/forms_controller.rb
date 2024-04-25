@@ -35,7 +35,7 @@ class FormsController < ApplicationController
 
     mail = Mail.new do
       from     'edify.call.centre@gmail.com'
-      to       'nazarkozakhar@gmail.com'
+      to       form.email
       subject  'New Form Submission'
       body     "Name: #{form.name}\nEmail: #{form.email}\nQuestion: #{form.question}"
     end
